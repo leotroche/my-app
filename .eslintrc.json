@@ -1,36 +1,33 @@
 {
-	"root": true,
-	"env": {
-		"browser": true,
-		"node": true
-	},
-	"extends": [
-		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended-type-checked",
-		"plugin:@typescript-eslint/stylistic-type-checked",
-		"plugin:react/recommended",
-		"plugin:react/jsx-runtime",
-		"plugin:react-hooks/recommended",
-		"plugin:jsx-a11y/recommended"
-	],
-	"parserOptions": {
-		"project": ["tsconfig.json", "tsconfig.node.json"]
-	},
-	"settings": {
-		"react": {
-			"version": "detect"
-		}
-	},
-	"rules": {
-		"@typescript-eslint/consistent-type-definitions": ["error", "type"],
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/stylistic",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
 
-		"react/jsx-sort-props": [
-			"error",
-			{
-				"callbacksLast": true,
-				"reservedFirst": true,
-				"shorthandFirst": true
-			}
-		]
-	}
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "reservedFirst": true,
+        "shorthandFirst": true
+      }
+    ]
+  }
 }
